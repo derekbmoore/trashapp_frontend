@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import FormImage from '../../assets/28885.jpg'
+
 const UsersForm = () => {
   const [values, setValues] = useState({
     FullName: '',
@@ -34,7 +36,7 @@ const UsersForm = () => {
         {/* Image Section */}
         <div className="h-full flex items-center justify-center">
           <img
-            src="../src/assets/28885.jpg" // Replace with the path to your image
+            src={FormImage} // Replace with the path to your image
             alt="Registration Image"
             className=" object-cover w-full h-full"
           />

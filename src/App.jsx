@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import ColectorsForms from './Components/ColectorsForm/ColectorsForms';
 import UsersForm from './Components/UsersForm/UsersForm';
+import Banner from '../src/assets/garbage.jpg';
 const MainPage = () => {
 
   const [formType, setFormType] = useState("user");
@@ -42,7 +43,7 @@ setFormType(type)
         </div>
 
         <div className="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl h-full w-full mr-12">
-          <img src="../src/assets/garbage.jpg" alt="Hero image" width="4500" height="4500" className="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none h-full w-full" />
+          <img src={Banner} alt="Hero" width="4500" height="4500" className="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none h-full w-full" />
         </div>
       </div>
     </section>
